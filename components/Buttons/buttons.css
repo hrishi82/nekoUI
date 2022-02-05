@@ -1,0 +1,177 @@
+.btn{
+    background-color: var(--primary-clr);
+    color: var(--default-font-clr);
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.btn:hover{
+    background-color: var(--primary-hover-clr);
+}
+
+
+.btn-primary{
+    background-color: var(--primary-clr);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-hover-clr);
+}
+
+.btn-secondary{
+    background-color: var(--secondary-clr);
+}
+
+.btn-secondary:hover{
+    background-color: var(--secondary-hover-clr);
+}
+
+
+
+.btn-success{
+    background-color: var(--success-clr);
+}
+.btn-success:hover{
+    background-color: var(--success-hover-clr);
+}
+
+
+
+.btn-warning{
+    background-color: var(--warning-clr);
+}
+.btn-warning:hover{
+    background-color: var(--warning-hover-clr);
+}
+
+
+
+.btn-danger{
+    background-color: var(--danger-clr);
+}
+.btn-danger:hover{
+    background-color: var(--danger-hover-clr);
+}
+
+
+
+
+
+
+.outline-btn{
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}
+
+.outline-btn:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+.outline-primary-btn{
+    background-color: white;
+    color: var(--primary-clr);
+    outline: 1px solid var(--primary-clr);
+}
+.outline-primary-btn:hover{
+    background-color: var(--primary-clr);
+    color: white;
+    border: none;
+}
+.outline-secondary-btn{
+    background-color: white;
+    color: var(--secondary-clr);
+    outline: 1px solid var(--secondary-clr);
+}
+.outline-secondary-btn:hover{
+    background-color: var(--secondary-clr);
+    color: white;
+    border: none;
+}
+
+
+
+
+.outline-success-btn{
+    background-color: white;
+    color: var(--success-clr);
+    outline: 1px solid var(--success-clr);
+}
+.outline-success-btn:hover{
+    background-color: var(--success-clr);
+    color: white;
+    border: none;
+}
+
+
+
+
+.outline-warning-btn{
+    background-color: white;
+    color: var(--warning-clr);
+    outline: 1px solid var(--warning-clr);
+}
+.outline-warning-btn:hover{
+    background-color: var(--warning-clr);
+    color: white;
+    border: none;
+}
+
+
+
+
+.outline-danger-btn{
+    background-color: white;
+    color: var(--danger-clr);
+    outline: 1px solid var(--danger-clr);
+}
+.outline-danger-btn:hover{
+    background-color: var(--danger-clr);
+    color: white;
+    border: none;
+}
+
+
+
+
+
+.btn-link{
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+.icon-btn-link{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 0.5rem
+}
+
+.icon-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn-favicon-icon{
+    margin-right: 0.5rem;
+}
+
+.floating-btn{
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.2em;
+}
+
