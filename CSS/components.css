@@ -11,7 +11,8 @@
 @import url('../components/Lists/lists.css');
 @import url('../components/Navigation/nav.css');
 @import url('../components/Modal/modal.css');
-@import url('../components/Snackbar/snackbar.css');
+@import url('../components/Toast/toast.css');
+@import url('../components/Rating/rating.css');
 
 
 :root{
@@ -35,6 +36,8 @@
 
     --warning-clr: #ffa600;
     --warning-hover-clr: #dd9103;
+
+    --disabled-clr: #808080;
     
 
     --white-bg: rgb(255, 255, 255);
