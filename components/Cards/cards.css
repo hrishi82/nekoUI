@@ -1,0 +1,131 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin: 0.5rem;
+    width: 21.85rem;
+    box-sizing: border-box;
+}
+
+.card-image-box{
+    width: 100%;
+    height: 100%;
+}
+
+/*********  Body ********/
+
+.card-body-container{
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.card-main-topic{
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.card-sub-topic{
+    margin: 0.4rem 0 1.2rem 0;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.card-topic-summary{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/*********  Footer ********/
+
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+.card-footer-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-clr);
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+}
+
+.card-footer-icon{
+    background: none;
+    border: none;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.card-text-ov-img{
+    bottom: 0rem;
+    left: 1rem;
+    color: var(--card-text-clr-over-img); 
+}
+
+
+/*********  Horizontal Card ********/
+
+.card-horizontal-layout{
+    display: flex;
+}
+
+.card-image-box-horiz{
+    width:30%;
+    object-fit: cover;
+}
+
+.card-img-horiz{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-horiz-content{
+    padding: 1rem 0.6rem;
+}
+
+.card-horiz-footer{
+    padding: 1rem;
+}
+
+/********* Card w Badge ********/
+
+.card-badge{
+    background-color: var(--primary-clr);
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+/********* Card w Dismiss ********/
+.card-dismiss-btn{
+    color: var(--dismiss-btn-background);
+    font-size: 1.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+} 
+
+/********* Card w shadow ********/
+
+.card-shadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
