@@ -1,0 +1,51 @@
+.input {
+    color: var(--input-text-color);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 0 1.1rem .8rem;
+    width: 95%;
+  }
+  label {
+    display: block;
+  }
+  .input-txt {
+    background-color: var(--white-bg);
+    border: 1px solid var(--input-border);
+    padding: 0.6rem 0.7rem;
+    font-size: 0.8rem;
+    margin: 0.313rem 0;
+    width: 100%;
+    transition: 0.3s all ease;
+    outline: none;
+    border-radius: 2px;
+  }
+.radio,input[type=radio]{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
+.textarea {
+  border-color: var(--border-color);
+  padding: 1rem;
+  font-size: 1rem;
+  resize: none;
+}
+.input-error {
+  border: 1px solid var(--danger-clr);
+}
+
+.input-error-text{
+    margin: 0;
+    color: var(--danger-clr);
+}
+
+.input-success {
+    border: 1px solid var(--success-clr);
+  }
+  
+.input-success-text{
+    margin: 0;
+    color: var(--success-clr);
+}
