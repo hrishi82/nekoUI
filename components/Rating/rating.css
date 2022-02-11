@@ -1,0 +1,20 @@
+.rating-container{
+    display: inline-flex;
+    color: var(--warning-clr);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    justify-content: center;
+}
+.rating-container input{
+    display: none;
+}
+.rating-container input+label{
+    cursor: pointer;
+}
+.rating-container input:checked + label ~ label{
+    color: var(--disabled-clr);
+}
+.rating-container label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
