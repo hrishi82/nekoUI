@@ -1,0 +1,83 @@
+@import url('/CSS/components.css');
+@import url('/CSS/navbar.css');
+@import url('/CSS/bodyUtilities.css');
+@import url('/CSS/sidebar.css');
+
+
+.docs-main-container{
+    max-width: 56.25rem;
+    margin: auto;
+    display: flex;
+    margin-top: 3rem;
+    padding: 1.5rem;    
+}
+
+.docs-all-content-container{
+    min-width: 0;
+    max-width: 40rem;
+    flex: 1 1 0%;
+    margin: auto;
+    text-align: justify;
+}
+
+
+.component-live-example-container {
+    min-height: 6.25rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    border-radius: 0.2rem;
+  }
+
+.example-column-layout{
+    flex-direction: column;
+    gap:0.5rem;
+  }
+
+/* To make text alignment example work */
+ .example-column-layout-for-text{
+    gap:0.5rem;
+    display: block;
+ } 
+
+.code-snippet-container{
+    box-sizing: border-box;
+    width: 98%;
+    max-height: 20rem;
+    /* height: max-content; */
+    margin: 1rem 0.2rem;
+    overflow-y: scroll;
+    font-size: 0.8rem;
+}
+
+.docs-content-block{
+    margin: 3rem 0;
+}
+
+.docs-content-first-block{
+    margin-top: 0;
+}
+
+.docs-content-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.docs-content-paragraph{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+}
+
+.docs-content-class-name{
+    color: var(--primary-clr);
+    font-weight: 600;
+}
+

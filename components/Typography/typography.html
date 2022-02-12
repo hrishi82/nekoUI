@@ -4,38 +4,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Utilities</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Typography</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
-    <!-- Default headings -->
-    <h1>H1-Heading</h1>
-    <h2>H2-Heading</h2>
-    <h3>H3-Heading</h3>
-    <h4>H4-Heading</h4>
-    <h5>H5-Heading</h5>
 
-    <!-- Diifferent text sizes -->
-    <p class="text-xl">Lorem Ipsum</p>
-    <p class="text-l">Lorem Ipsum</p>
-    <p class="text-md">Lorem Ipsum</p>
-    <p class="text-reg">Lorem Ipsum</p>
-    <p class="text-sm">Lorem Ipsum</p>
-    <p class="text-xs">Lorem Ipsum</p>
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
 
-    
-    <!-- Text with no margin -->
-    <h1 class='text-no-margin'>H1-Heading</h1>
-    <p class="text-reg text-no-margin">Lorem Ipsum</p>
-    
-    
-    <!-- Text align -->
-    <h4 class="text-center">Center text</h4>
-    
-    
-    <!-- Text align -->
-    <h4 class="text-grey">Center text</h4>
-    <p class="text-reg text-no-margin text-grey">Lorem Ipsum</p>
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Typography</h3>
+              <p class="docs-content-paragraph">
+                Documentation and examples of the different text modifications offered by nekoUI. Use the class <span class="docs-content-class-name">modal</span> to use it</p>
+            </div>
+  
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Headings</div>
+                <p class="docs-content-paragraph">
+                    HTML headings ranging from h1 to h6 are available.</p>
 
+                <div class="component-live-example-container example-column-layout">
+                    <!-- Default headings -->
+                    <h1>H1-Heading</h1>
+                    <h2>H2-Heading</h2>
+                    <h3>H3-Heading</h3>
+                    <h4>H4-Heading</h4>
+                    <h5>H5-Heading</h5>
+                    <h6>H6-Heading</h6>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Default headings --&gt;
+&lt;h1&gt;H1-Heading&lt;/h1&gt;
+&lt;h2&gt;H2-Heading&lt;/h2&gt;
+&lt;h3&gt;H3-Heading&lt;/h3&gt;
+&lt;h4&gt;H4-Heading&lt;/h4&gt;
+&lt;h5&gt;H5-Heading&lt;/h5&gt;
+&lt;h6&gt;H6-Heading&lt;/h6&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Text sizes</div>
+                <p class="docs-content-paragraph">
+                    There are various text sizes offered by nekoUI. They can be accessed using the following classes in the order of biggest to smallest font size. <span class="docs-content-class-name">text-xl, text-l, text-md, text-reg, text-sm, text-xs</span></p>
+
+                <div class="component-live-example-container example-column-layout">
+                    <!-- Diifferent text sizes -->
+                    <p class="text-xl">lorem-ipsum</p>
+                    <p class="text-l">lorem-ipsum</p>
+                    <p class="text-md">lorem-ipsum</p>
+                    <p class="text-reg">lorem-ipsum</p>
+                    <p class="text-sm">lorem-ipsumm</p>
+                    <p class="text-xs">lorem-ipsum</p>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Diifferent text sizes --&gt;
+&lt;p class="text-xl"&gt;Lorem Ipsum&lt;/p&gt;
+&lt;p class="text-l"&gt;Lorem Ipsum&lt;/p&gt;
+&lt;p class="text-md"&gt;Lorem Ipsum&lt;/p&gt;
+&lt;p class="text-reg"&gt;Lorem Ipsum&lt;/p&gt;
+&lt;p class="text-sm"&gt;Lorem Ipsum&lt;/p&gt;
+&lt;p class="text-xs"&gt;Lorem Ipsum&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Text Alignment</div>
+                <p class="docs-content-paragraph">
+                    There are three text alignment options offered by nekoUI. They are left, center and right alignment. They can be accessed using the classes <span class="docs-content-class-name">text-left, text-center, text-right</span></p>
+
+                <div class="component-live-example-container example-column-layout-for-text">
+                    <!-- Text align -->
+                    <h4 class="text-left">Left Aligned</h4>
+                    <h4 class="text-center">Center Aligned</h4>
+                    <h4 class="text-right">Right Aligned</h4>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Text align --&gt;
+&lt;h4 class="text-left"&gt;Left Aligned&lt;/h4&gt;
+&lt;h4 class="text-center"&gt;Center Aligned&lt;/h4&gt;
+&lt;h4 class="text-right"&gt;Right Aligned&lt;/h4&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Text Grey</div>
+                <p class="docs-content-paragraph">
+                    nekoUI provides to grey out any text using the class <span class="docs-content-class-name">text-grey</span>. This can be used where a meaning conveyed by the text has less importance</p>
+
+                <div class="component-live-example-container">
+                    <!-- Text Grey -->
+                    <h5 class="text-grey">Greyed text</h5>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Text Grey --&gt;
+&lt;h5 class="text-grey"&gt;Center text&lt;/h5&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
+
+
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>
+

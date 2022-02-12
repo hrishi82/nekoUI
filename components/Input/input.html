@@ -4,50 +4,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Input</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
-    <div class="input">
-        <label>Name</label>
-        <input class="input-txt" type="text" />
-      </div>
 
-      <div class="input">
-        <label>Email</label>
-        <input class="input-txt" type="email" />
-      </div>
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
 
-      <div class="input">
-        <label>Password</label>
-        <input class="input-txt input-error" type="password" />
-        <p class="input-error-text">Wrong Password. Try again.</p>
-      </div>
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Input</h3>
+              <p class="docs-content-paragraph">
+                Inputs are used in forms to collect user related data</p>
+            </div>
+  
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Simple labelled input</div>
+                <p class="docs-content-paragraph">
+                  Label input has a label present at the top of the input field.</p>
+                 
+                <div class="component-live-example-container">
+                  <div class="input">
+                    <label>Name</label>
+                    <input class="input-txt" type="text" />
+                  </div>
+                
+                  <div class="input">
+                    <label>Email</label>
+                    <input class="input-txt" type="email" />
+                  </div>
+                </div>
 
-      <div class="input">
-        <label>Retype Password</label>
-        <input class="input-txt input-success" type="password" />
-        <p class="input-success-text">Details Match!</p>
-      </div>
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="input"&gt;
+  &lt;label&gt;Name&lt;/label&gt;
+  &lt;input class="input-txt" type="text" /&gt;
+&lt;/div&gt;
+
+&lt;div class="input"&gt;
+  &lt;label&gt;Email&lt;/label&gt;
+  &lt;input class="input-txt" type="email" /&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Input with validation</div>
+                <p class="docs-content-paragraph">
+                  These inputs behaves differently based on whether a validation check assigned by the admin is passed or not by the user. There are two classes which you can use depending uppon the state of verfification. For success we use <span class="docs-content-class-name">input-success</span> and for error we use <span class="docs-content-class-name">input-error</span></p>
+                 
+                <div class="component-live-example-container">
+                  <div class="input">
+                    <label>Password</label>
+                    <input class="input-txt input-error" type="password" />
+                    <p class="input-error-text">Wrong Password. Try again.</p>
+                  </div>
+                
+                  <div class="input">
+                    <label>Retype Password</label>
+                    <input class="input-txt input-success" type="password" />
+                    <p class="input-success-text">Details Match!</p>
+                  </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="input"&gt;
+  &lt;label&gt;Password&lt;/label&gt;
+  &lt;input class="input-txt input-error" type="password" /&gt;
+  &lt;p class="input-error-text"&gt;Wrong Password. Try again.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="input"&gt;
+  &lt;label&gt;Retype Password&lt;/label&gt;
+  &lt;input class="input-txt input-success" type="password" /&gt;
+  &lt;p class="input-success-text"&gt;Details Match!&lt;/p&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Input Slider</div>
+                <p class="docs-content-paragraph">Slider input can be used for range inputs like volume control or for setting the price range</p>
+                 
+                <div class="component-live-example-container">
+                  <div class="input">
+                    <input  type="range"  id="input-id-range"  min="0"
+                    max="100" value="30"  className="cur-point"
+                  />
+                  </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="input"&gt;
+  &lt;input  type="range"  id="input-id-range"  min="0"
+  max="100" value="30"  className="cur-point"/&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Text Area</div>
+                <p class="docs-content-paragraph">Text area input can be used to leave a feedback/note. Its resize feature is disabled by default.</p>
+                 
+                <div class="component-live-example-container">
+                  <div class="input">
+                    <textarea class="textarea" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="input"&gt;
+  &lt;textarea class="textarea" cols="30" rows="10"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Radio buttons</div>
+                <p class="docs-content-paragraph">Radio buttons allow the user to select one option from a set.</p>
+                 
+                <div class="component-live-example-container">
+                  <div class="radio">
+                    <input type="radio" name="language" id="html" value="HTML" />
+                    <label for="html">Option 1</label><br />
+                    <input type="radio" name="language" id="css" value="CSS" />
+                    <label for="css">Option 2</label><br />
+                    <input type="radio" name="language" id="javascript" value="JavaScript" disabled />
+                    <label for="javascript">Disabled Button</label>
+                  </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="radio"&gt;
+  &lt;input type="radio" name="language" id="html" value="HTML" /&gt;
+  &lt;label for="html"&gt;Option 1&lt;/label&gt;&lt;br /&gt;
+  &lt;input type="radio" name="language" id="css" value="CSS" /&gt;
+  &lt;label for="css"&gt;Option 2&lt;/label&gt;&lt;br /&gt;
+  &lt;input type="radio" name="language" id="javascript" value="JavaScript" disabled /&gt;
+  &lt;label for="javascript"&gt;Disabled Button&lt;/label&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
 
 
-      <div class="input">
-        <textarea class="textarea" cols="30" rows="10"></textarea>
-      </div>
-      
-      <div class="input">
-        <input  type="range"  id="input-id-range"  min="0"
-        max="100" value="30"  className="cur-point"
-      />
-      </div>
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
 
-      <div class="radio">
-        <input type="radio" name="language" id="html" value="HTML" />
-        <label for="html">HTML</label><br />
-        <input type="radio" name="language" id="css" value="CSS" />
-        <label for="css">CSS</label><br />
-        <input type="radio" name="language" id="javascript" value="JavaScript" disabled />
-        <label for="javascript">JavaScript</label>
-      </div>
+
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>
+

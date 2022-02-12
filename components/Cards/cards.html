@@ -4,236 +4,857 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Cards</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
+
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
 
-    <!-- Card with Badges -->
-    <div class="card relative">
-        <span class='card-badge absolute'>Awesome</span>
-        <section class="card-image-box">
-            <img  src="/Images/landscape.jpeg" alt="landscape" class='img-responsive'>
-        </section>
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
 
-        <section class="card-body-container">
-            <section class="card-topic-subtopic-container">
-                <h4 class="card-main-topic">Our Changing Planet</h4>
-                <h5 class="card-sub-topic">by Hrishikesh</h5>
-            </section>
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Cards</h3>
+              <p class="docs-content-paragraph">
+                Card are used to show user related data collectively, like product details.</p>
+            </div>
+  
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Card with badges</div>
 
-            <p class='card-topic-summary'>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-            </p>
-        </section>
+                <p class="docs-content-paragraph">The badge in these type of cards are used to highlight specific tags as set by the admin</p>
 
-        <section class="card-footer-container">
 
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
+                <div class="component-live-example-container">
+                    <!-- Card with Badges -->
+                    <div class="card relative">
+                        <span class='card-badge absolute'>Awesome</span>
+                        <section class="card-image-box">
+                            <img  src="/Images/landscape.jpeg" alt="landscape" class='img-responsive'>
+                        </section>
+
+                        <section class="card-body-container">
+                            <section class="card-topic-subtopic-container">
+                                <h4 class="card-main-topic">Our Changing Planet</h4>
+                                <h5 class="card-sub-topic">by Hrishikesh</h5>
+                            </section>
+
+                            <p class='card-topic-summary'>
+                                Visit ten places on our planet that are undergoing the biggest changes today.
+                            </p>
+                        </section>
+
+                        <section class="card-footer-container">
+
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Card with Badges --&gt;
+&lt;div class="card relative"&gt;
+    &lt;span class='card-badge absolute'&gt;Awesome&lt;/span&gt;
+    &lt;section class="card-image-box"&gt;
+        &lt;img  src="/Images/landscape.jpeg" alt="landscape" class='img-responsive'&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-body-container"&gt;
+        &lt;section class="card-topic-subtopic-container"&gt;
+            &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+            &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+        &lt;/section&gt;
+
+        &lt;p class='card-topic-summary'&gt;
+            Visit ten places on our planet that are undergoing the biggest changes today.
+        &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-footer-container"&gt;
+
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
 
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-        </section>
-    </div>
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Card with dismiss</div>
 
-    <!-- Card with Dismiss -->
-    <div class="card relative">
-        <span class='card-dismiss-btn absolute'><i class="fas fa-times-circle"></i></span>
-        <section class="card-image-box ">
-            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
-        </section>
-
-        <section class="card-body-container">
-            <section class="card-topic-subtopic-container">
-                <h4 class="card-main-topic">Our Changing Planet</h4>
-                <h5 class="card-sub-topic">by Hrishikesh</h5>
-            </section>
-
-            <p class='card-topic-summary'>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-            </p>
-        </section>
-
-        <section class="card-footer-container">
-
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
-            </div>
-
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-        </section>
-    </div>
-
-    <!-- Cards with text overlay -->
-    <div class="card">
-        <section class="card-image-box relative">
-            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
-            <section class="card-topic-subtopic-container absolute card-text-ov-img">
-                <h4 class="card-main-topic">Our Changing Planet</h4>
-                <h5 class="card-sub-topic">by Hrishikesh</h5>
-            </section>
-        </section>
+                <p class="docs-content-paragraph">This is a dismissible card</p>
 
 
-        <section class="card-body-container">
-            <p class='card-topic-summary'>
-                Visit ten places on our planet that are undergoing the biggest changes today. 
-            </p>
-        </section>
+                <div class="component-live-example-container">
+                    <!-- Card with dismiss -->
+                    <div class="card relative">
+                        <span class='card-dismiss-btn absolute'><i class="fas fa-times-circle"></i></span>
+                        <section class="card-image-box ">
+                            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
+                        </section>
+                
+                        <section class="card-body-container">
+                            <section class="card-topic-subtopic-container">
+                                <h4 class="card-main-topic">Our Changing Planet</h4>
+                                <h5 class="card-sub-topic">by Hrishikesh</h5>
+                            </section>
+                
+                            <p class='card-topic-summary'>
+                                Visit ten places on our planet that are undergoing the biggest changes today.
+                            </p>
+                        </section>
+                
+                        <section class="card-footer-container">
+                
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+                
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
 
-        <section class="card-footer-container">
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
-            </div>
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Cards with dismiss --&gt;
+&lt;div class="card relative"&gt;
+&lt;span class='card-dismiss-btn absolute'&gt;&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;section class="card-image-box "&gt;
+    &lt;img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'&gt;
+&lt;/section&gt;
 
-        </section>
-    </div>
+&lt;section class="card-body-container"&gt;
+    &lt;section class="card-topic-subtopic-container"&gt;
+        &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+        &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+    &lt;/section&gt;
 
-    <!-- Text-only card-->
-    <div class="card">
-        <section class="card-body-container">
-            <section class="card-topic-subtopic-container">
-                <h4 class="card-main-topic">Our Changing Planet</h4>
-                <h5 class="card-sub-topic">by Hrishikesh</h5>
-            </section>
+    &lt;p class='card-topic-summary'&gt;
+        Visit ten places on our planet that are undergoing the biggest changes today.
+    &lt;/p&gt;
+&lt;/section&gt;
 
-            <p class='card-topic-summary'>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-            </p>
-        </section>
+&lt;section class="card-footer-container"&gt;
 
-        <section class="card-footer-container">
+    &lt;div class="footer-btn-wrapper"&gt;
+        &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+        &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+    &lt;/div&gt;
 
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
+    &lt;div class="footer-icon-btn-wrapper"&gt;
+        &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
 
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-        </section>
-    </div>
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Card with text overlay</div>
 
-    <!-- Vertical card -->
-    <div class="card">
-        <section class="card-image-box">
-            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
-        </section>
-
-        <section class="card-body-container">
-            <section class="card-topic-subtopic-container">
-                <h4 class="card-main-topic">Our Changing Planet</h4>
-                <h5 class="card-sub-topic">by Hrishikesh</h5>
-            </section>
-
-            <p class='card-topic-summary'>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-            </p>
-        </section>
-
-        <section class="card-footer-container">
-
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
-            </div>
-
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-        </section>
-    </div>
-
-    <!-- Horizontal card -->
-    <div class="card">
-
-        <section class="card-horizontal-layout">
-
-            <section class="card-image-box-horiz">
-                <img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/>
-            </section>
-
-            <section class="card-body-container card-horiz-content">
-                <section class="card-topic-subtopic-container">
-                    <h4 class="card-main-topic">Our Changing Planet</h4>
-                    <h5 class="card-sub-topic">by Hrishikesh</h5>
-                </section>
-            </section>
-        </section>
+                <p class="docs-content-paragraph">This is a type of card where text is displayed on top of the image</p>
 
 
-        <section class="card-footer-container card-horiz-footer">
-
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
-            </div>
-
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-
-        </section>
-    </div>
-
-    <!-- Card with shadow -->
-    <div class="card card-shadow">
-
-        <section class="card-horizontal-layout">
-
-            <section class="card-image-box-horiz">
-                <img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/>
-            </section>
-
-            <section class="card-body-container card-horiz-content">
-                <section class="card-topic-subtopic-container">
-                    <h4 class="card-main-topic">Our Changing Planet</h4>
-                    <h5 class="card-sub-topic">by Hrishikesh</h5>
-                </section>
-            </section>
-        </section>
+                <div class="component-live-example-container">
+                    <!-- Cards with text overlay -->
+                    <div class="card">
+                        <section class="card-image-box relative">
+                            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
+                            <section class="card-topic-subtopic-container absolute card-text-ov-img">
+                                <h4 class="card-main-topic">Our Changing Planet</h4>
+                                <h5 class="card-sub-topic">by Hrishikesh</h5>
+                            </section>
+                        </section>
 
 
-        <section class="card-footer-container card-horiz-footer">
+                        <section class="card-body-container">
+                            <p class='card-topic-summary'>
+                                Visit ten places on our planet that are undergoing the biggest changes today. 
+                            </p>
+                        </section>
 
-            <div class="footer-btn-wrapper">
-                <button class="card-footer-btn">READ</button>
-                <button class="card-footer-btn">BOOKMARK</button>
+                        <section class="card-footer-container">
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Cards with text overlay --&gt;
+&lt;div class="card"&gt;
+    &lt;section class="card-image-box relative"&gt;
+        &lt;img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'&gt;
+        &lt;section class="card-topic-subtopic-container absolute card-text-ov-img"&gt;
+            &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+            &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+        &lt;/section&gt;
+    &lt;/section&gt;
+
+
+    &lt;section class="card-body-container"&gt;
+        &lt;p class='card-topic-summary'&gt;
+            Visit ten places on our planet that are undergoing the biggest changes today. 
+        &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-footer-container"&gt;
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
 
-            <div class="footer-icon-btn-wrapper">
-                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
-                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Text only card</div>
+
+                <p class="docs-content-paragraph">Card with only text content</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Text-only card-->
+                    <div class="card">
+                        <section class="card-body-container">
+                            <section class="card-topic-subtopic-container">
+                                <h4 class="card-main-topic">Our Changing Planet</h4>
+                                <h5 class="card-sub-topic">by Hrishikesh</h5>
+                            </section>
+
+                            <p class='card-topic-summary'>
+                                Visit ten places on our planet that are undergoing the biggest changes today.
+                            </p>
+                        </section>
+
+                        <section class="card-footer-container">
+
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Text-only card--&gt;
+&lt;div class="card"&gt;
+    &lt;section class="card-body-container"&gt;
+        &lt;section class="card-topic-subtopic-container"&gt;
+            &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+            &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+        &lt;/section&gt;
+
+        &lt;p class='card-topic-summary'&gt;
+            Visit ten places on our planet that are undergoing the biggest changes today.
+        &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-footer-container"&gt;
+
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
 
-        </section>
-    </div>
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Vertical Card</div>
 
+                <p class="docs-content-paragraph">Card with vertical layout</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Vertical card -->
+                    <div class="card">
+                        <section class="card-image-box">
+                            <img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'>
+                        </section>
+
+                        <section class="card-body-container">
+                            <section class="card-topic-subtopic-container">
+                                <h4 class="card-main-topic">Our Changing Planet</h4>
+                                <h5 class="card-sub-topic">by Hrishikesh</h5>
+                            </section>
+
+                            <p class='card-topic-summary'>
+                                Visit ten places on our planet that are undergoing the biggest changes today.
+                            </p>
+                        </section>
+
+                        <section class="card-footer-container">
+
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Vertical card --&gt;
+&lt;div class="card"&gt;
+    &lt;section class="card-image-box"&gt;
+        &lt;img  src="../../Images/landscape.jpeg" alt="landscape" class='img-responsive'&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-body-container"&gt;
+        &lt;section class="card-topic-subtopic-container"&gt;
+            &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+            &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+        &lt;/section&gt;
+
+        &lt;p class='card-topic-summary'&gt;
+            Visit ten places on our planet that are undergoing the biggest changes today.
+        &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="card-footer-container"&gt;
+
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Horizontal Card</div>
+
+                <p class="docs-content-paragraph">Card with horizontal layout</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Horizontal card -->
+                    <div class="card">
+
+                        <section class="card-horizontal-layout">
+
+                            <section class="card-image-box-horiz">
+                                <img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/>
+                            </section>
+
+                            <section class="card-body-container card-horiz-content">
+                                <section class="card-topic-subtopic-container">
+                                    <h4 class="card-main-topic">Our Changing Planet</h4>
+                                    <h5 class="card-sub-topic">by Hrishikesh</h5>
+                                </section>
+                            </section>
+                        </section>
+
+
+                        <section class="card-footer-container card-horiz-footer">
+
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Horizontal card --&gt;
+&lt;div class="card"&gt;
+
+    &lt;section class="card-horizontal-layout"&gt;
+
+        &lt;section class="card-image-box-horiz"&gt;
+            &lt;img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/&gt;
+        &lt;/section&gt;
+
+        &lt;section class="card-body-container card-horiz-content"&gt;
+            &lt;section class="card-topic-subtopic-container"&gt;
+                &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+                &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+    &lt;/section&gt;
+
+
+    &lt;section class="card-footer-container card-horiz-footer"&gt;
+
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Card with shadow</div>
+
+                <p class="docs-content-paragraph">Card with background shadow apllied. This kind of cards are used the card an elevated look </p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Card with shadow -->
+                    <div class="card card-shadow">
+
+                        <section class="card-horizontal-layout">
+
+                            <section class="card-image-box-horiz">
+                                <img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/>
+                            </section>
+
+                            <section class="card-body-container card-horiz-content">
+                                <section class="card-topic-subtopic-container">
+                                    <h4 class="card-main-topic">Our Changing Planet</h4>
+                                    <h5 class="card-sub-topic">by Hrishikesh</h5>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="card-footer-container card-horiz-footer">
+
+                            <div class="footer-btn-wrapper">
+                                <button class="card-footer-btn">READ</button>
+                                <button class="card-footer-btn">BOOKMARK</button>
+                            </div>
+
+                            <div class="footer-icon-btn-wrapper">
+                                <button class="card-footer-icon"><i class="far fa-heart"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="card-footer-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Card with shadow --&gt;
+&lt;div class="card card-shadow"&gt;
+
+    &lt;section class="card-horizontal-layout"&gt;
+
+        &lt;section class="card-image-box-horiz"&gt;
+            &lt;img  src="../../Images/landscape.jpeg" alt="landscape" class='card-img-horiz'/&gt;
+        &lt;/section&gt;
+
+        &lt;section class="card-body-container card-horiz-content"&gt;
+            &lt;section class="card-topic-subtopic-container"&gt;
+                &lt;h4 class="card-main-topic"&gt;Our Changing Planet&lt;/h4&gt;
+                &lt;h5 class="card-sub-topic"&gt;by Hrishikesh&lt;/h5&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+    &lt;/section&gt;
+
+
+    &lt;section class="card-footer-container card-horiz-footer"&gt;
+
+        &lt;div class="footer-btn-wrapper"&gt;
+            &lt;button class="card-footer-btn"&gt;READ&lt;/button&gt;
+            &lt;button class="card-footer-btn"&gt;BOOKMARK&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer-icon-btn-wrapper"&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="far fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class="card-footer-icon"&gt;&lt;i class="fas fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <h3 class="docs-content-heading">E-commerce Cards</h3>
+                <p class="docs-content-paragraph">
+                  These cards can be used while building e-commerce web-pages</p>
+              </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Vertical Product Card</div>
+
+                <p class="docs-content-paragraph">This Card can be used to display a product in a product listing page</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Vertical product card -->
+                    <div class="product-card relative">
+                        <span class='product-card-badge absolute'>
+                            <i class="far fa-heart"></i>
+                        </span>
+                    
+                        <div class="product-card-img-box">
+                            <img  src="/Images/turbogreen.jpg" alt="product-image" class='product-img'>
+                        </div>
+                    
+                        <section class="product-card-body">
+                            <h5 class="product-card-title">Nike AJ1 - Turbo green</h5>
+                            <div class="product-card-price-wrapper">
+                                <div class="product-card-price-section">
+                                    <h5 class="product-card-prod-price">Rs.13999</h5>
+                                    <h6 class="product-card-prod-prev-price">Rs.12599</h6>
+                                </div>
+                                <div class="product-card-price-subinfo">
+                                    <h6 class="product-card-off-percent">(10% off)</h6>
+                                </div>
+                            </div>
+                    
+                            <section class="product-card-btn-wrapper">
+                                <button class="btn card-btn">Go to Cart</button>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="product-card relative"&gt;
+&lt;span class='product-card-badge absolute'&gt;
+    &lt;i class="far fa-heart"&gt;&lt;/i&gt;
+&lt;/span&gt;
+
+&lt;div class="product-card-img-box"&gt;
+    &lt;img  src="images/turbogreen.jpg" alt="product-image" class='product-image'&gt;
+&lt;/div&gt;
+
+&lt;section class="product-card-body"&gt;
+    &lt;h5 class="product-card-title"&gt;Nike AJ1 - Turbo green&lt;/h5&gt;
+    &lt;div class="product-card-price-wrapper"&gt;
+        &lt;div class="product-card-price-section"&gt;
+            &lt;h5 class="product-card-prod-price"&gt;Rs.13999&lt;/h5&gt;
+            &lt;h6 class="product-card-prod-prev-price"&gt;Rs.12599&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="product-card-price-subinfo"&gt;
+            &lt;h6 class="product-card-off-percent"&gt;(10% off)&lt;/h6&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;section class="product-card-btn-wrapper"&gt;
+        &lt;button class="btn card-btn"&gt;Go to Cart&lt;/button&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Horizontal Product Card</div>
+
+                <p class="docs-content-paragraph">This Card can be used to display a product in a more detailed way</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Horizontal product card -->
+                    <div class="prod-card-landscape relative">
+                        <span class='product-card-badge absolute'>
+                            <i class="far fa-heart"></i>
+                        </span>
+                    
+                        <section class="prod-card-landscape-image-box">
+                            <img  src="/Images/turbogreen.jpg" alt="landscape" class='product-img'>
+                        </section>
+                    
+                        <section class="prod-card-landscape-body">
+                            <section class="product-card-body">
+                                <h5 class="product-card-title"><span class='text-reg'>Nike AJ1 - Turbo Green</span></h5>
+                                <div class="product-card-price-wrapper">
+                                    <div class="product-card-price-section">
+                                        <h5 class="product-card-prod-price">Rs.10499</h5>
+                                        <h6 class="product-card-prod-prev-price">Rs.14499</h6>
+                                    </div>
+                                    <div class="product-card-price-subinfo">
+                                        <h6 class="product-card-off-percent">(33% off)</h6>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                            <div class="item-quantity-container">
+                                <span class="item-quantity-title">Quantity:</span>
+                                <span class="item-quantity-icon-btn"><i class="fas fa-minus-circle"></i></span>
+                                <span class="item-quantity">2</span>
+                                <span class="item-quantity-icon-btn"><i class="fas fa-plus-circle"></i></p>
+                            </div>
+                    
+                            <section class="product-card-btn-wrapper landscape-card-btn-cont">
+                                <button class="btn card-btn">Checkout</button>
+                                <button class="btn btn-secondary card-btn">Add to bag</button>
+                    
+                            </section>
+                        </section>
+                    
+                    </div> 
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="prod-card-landscape relative"&gt;
+&lt;span class='product-card-badge absolute'&gt;
+    &lt;i class="far fa-heart"&gt;&lt;/i&gt;
+&lt;/span&gt;
+
+&lt;section class="prod-card-landscape-image-box"&gt;
+    &lt;img  src="./images/turbogreen.jpg" alt="landscape" class='product-img'&gt;
+&lt;/section&gt;
+
+&lt;section class="prod-card-landscape-body"&gt;
+    &lt;section class="product-card-body"&gt;
+        &lt;h5 class="product-card-title"&gt;&lt;span class='text-reg'&gt;Nike AJ1 - Turbo Green&lt;/span&gt;&lt;/h5&gt;
+        &lt;div class="product-card-price-wrapper"&gt;
+            &lt;div class="product-card-price-section"&gt;
+                &lt;h5 class="product-card-prod-price"&gt;Rs.10499&lt;/h5&gt;
+                &lt;h6 class="product-card-prod-prev-price"&gt;Rs.14499&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class="product-card-price-subinfo"&gt;
+                &lt;h6 class="product-card-off-percent"&gt;(33% off)&lt;/h6&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;div class="item-quantity-container"&gt;
+        &lt;span class="item-quantity-title"&gt;Quantity:&lt;/span&gt;
+        &lt;span class="item-quantity-icon-btn"&gt;&lt;i class="fas fa-minus-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="item-quantity"&gt;2&lt;/span&gt;
+        &lt;span class="item-quantity-icon-btn"&gt;&lt;i class="fas fa-plus-circle"&gt;&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;section class="product-card-btn-wrapper landscape-card-btn-cont"&gt;
+        &lt;button class="btn card-btn margin-Top-Btm-xs"&gt;Checkout&lt;/button&gt;
+        &lt;button class="btn btn-secondary card-btn"&gt;Add to bag&lt;/button&gt;
+
+    &lt;/section&gt;
+&lt;/section&gt;
+
+&lt;/div&gt; 
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
+
+
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>

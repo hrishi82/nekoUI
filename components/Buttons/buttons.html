@@ -4,46 +4,354 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buttons</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Buttons</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
+
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
 
-    <button class="btn btn-success">
-        Success
-    </button>
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
 
-    <button class="btn btn-secondary">
-        Secondary
-    </button>
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Buttons</h3>
+              <p class="docs-content-paragraph">
+                Buttons allow users to take actions, and make choices, with a single tap.
+            </div>
+  
+            <hr class="divider">
+  
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Contained Buttons</div>
 
-    <button class="btn outline-danger-btn">
-        Danger
-    </button>
-
-    <button class="btn btn-warning">
-        <a href="#" class="btn-link">Link</a>
-    </button>
-
-    <button class="btn outline-secondary-btn">
-        <a href="#" class="btn-link">Link</a>
-    </button>
-
+                <p class="docs-content-paragraph">Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app</p>
 
 
-    <button class="btn icon-btn btn-danger">
-        <i class="fas fa-address-book btn-favicon-icon"></i>
-        new link  
-    </button>
+                <div class="component-live-example-container">
+                    <!-- Primary button -->
+                    <button class="btn btn-primary">
+                        Primary
+                    </button>
 
-    <button class="btn floating-btn btn-secondary">
-        <i class="fas fa-pen"></i>
-    </button>
+                    <!-- Secondary button -->
+                    <button class="btn btn-secondary">
+                        Secondary
+                    </button>
+
+                    <!-- Success button -->
+                    <button class="btn btn-success">
+                        Success
+                    </button>
+
+                    <!-- Warning button -->
+                    <button class="btn btn-warning">
+                        Warning
+                    </button>
+
+                    <!-- Danger button -->
+                    <button class="btn btn-danger">
+                        Danger
+                    </button>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Primary button --&gt;
+&lt;button class="btn btn-primary"&gt;
+    Primary
+&lt;/button&gt;
+
+&lt;!-- Secondary button --&gt;
+&lt;button class="btn btn-secondary"&gt;
+    Secondary
+&lt;/button&gt;
+
+&lt;!-- Success button --&gt;
+&lt;button class="btn btn-success"&gt;
+    Success
+&lt;/button&gt;
+
+&lt;!-- Warning button --&gt;
+&lt;button class="btn btn-warning"&gt;
+    warning
+&lt;/button&gt;
+
+&lt;!-- Danger button --&gt;
+&lt;button class="btn btn-danger"&gt;
+    Danger
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Outlined Buttons</div>
+
+                <p class="docs-content-paragraph">Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.</p>
 
 
+                <div class="component-live-example-container">
+                    <!-- Primary outline button -->
+                    <button class="btn outline-primary-btn">
+                        Primary
+                    </button>
+
+                    <!-- Secondary outline button -->
+                    <button class="btn outline-secondary-btn">
+                        Secondary
+                    </button>
+
+                    <!-- Success outline button -->
+                    <button class="btn outline-success-btn">
+                        Success
+                    </button>
+
+                    <!-- Warning outline button -->
+                    <button class="btn outline-warning-btn">
+                        Warning
+                    </button>
+
+                    <!-- Danger outline button -->
+                    <button class="btn outline-danger-btn">
+                        Danger
+                    </button>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Primary outline button --&gt;
+&lt;button class="btn outline-primary-btn"&gt;
+    Primary
+&lt;/button&gt;
+
+&lt;!-- Secondary outline button --&gt;
+&lt;button class="btn outline-secondary-btn"&gt;
+    Secondary
+&lt;/button&gt;
+
+&lt;!-- Success outline button --&gt;
+&lt;button class="btn outline-success-btn"&gt;
+    Success
+&lt;/button&gt;
+
+&lt;!-- Warning outline button --&gt;
+&lt;button class="btn outline-warning-btn"&gt;
+    Warning
+&lt;/button&gt;
+
+&lt;!-- Danger outline button --&gt;
+&lt;button class="btn outline-danger-btn"&gt;
+    Danger
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Link Buttons</div>
+
+                <p class="docs-content-paragraph">Link buttons can be used to specificaly imply that the button is a link</p>
 
 
+                <div class="component-live-example-container">
+                    <!-- Link button -->
+                    <button class="btn btn-danger">
+                        <a href="#" class="btn-link">Link</a>
+                    </button>
+
+                    <!-- Link outlined button -->
+                    <button class="btn outline-secondary-btn">
+                        <a href="#" class="btn-link">Link</a>
+                    </button>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- Link button --&gt;
+&lt;button class="btn btn-warning"&gt;
+    &lt;a href="#" class="btn-link"&gt;Link&lt;/a&gt;
+&lt;/button&gt;
+
+&lt;!-- Link outlined button --&gt;
+&lt;button class="btn outline-secondary-btn"&gt;
+    &lt;a href="#" class="btn-link"&gt;Link&lt;/a&gt;
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Button with icon</div>
+
+                <p class="docs-content-paragraph">This is a variation of contained button where the action to be performed by the button is explicitly displayed with an icon placed inside the button</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Button with icon -->
+                    <button class="btn icon-btn btn-warning">
+                        <i class="fas fa-address-book btn-favicon-icon"></i>
+                        new link  
+                    </button>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+
+&lt;!-- Button with icon --&gt;
+&lt;button class="btn icon-btn btn-danger"&gt;
+    &lt;i class="fas fa-address-book btn-favicon-icon"&gt;&lt;/i&gt;
+    new link  
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Floating button</div>
+
+                <p class="docs-content-paragraph">Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected, such as adding or removing a star to an item.</p>
+
+
+                <div class="component-live-example-container">
+                    <!-- Floating button -->
+                    <button class="btn floating-btn btn-secondary">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="btn floating-btn btn-success">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="btn floating-btn btn-danger">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+
+&lt;!-- Floating button --&gt;
+&lt;button class="btn floating-btn btn-secondary"&gt;
+    &lt;i class="fas fa-pen"&gt;&lt;/i&gt;
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
+
+
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>

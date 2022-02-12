@@ -4,68 +4,289 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lits</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Lists</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
 
-    <div class="list-container">
-        <div class="list-title-subtitle-cont">
-            <h3 class="list-heading">List Heading</h3>
-        </div>
-        
-        <ul class="list-wrapper">
-            <li class='list-item'>List Item 1</li>
-            <li class='list-item'>List Item 2</li>
-            <li class='list-item'>List Item 3</li>
-            <li class='list-item'>List Item 4</li>
-        </ul>
-    </div>
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
 
-    <div class="list-container">
-        <div class="list-title-subtitle-cont seperator-line-bottom">
-            <h3 class="list-heading">List Heading</h3>
-            <h5 class="list-sub-heading">List sub heading</h5>
-        </div>
-        <ul class="list-wrapper">
-            <li class='list-item'>List Item 1</li>
-            <li class='list-item'>List Item 2</li>
-            <li class='list-item'>List Item 3</li>
-            <li class='list-item'>List Item 4</li>
-        </ul>
-    </div>
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Lists</h3>
+              <p class="docs-content-paragraph">
+                List as the name suggests can be used to stack items.</p>
+            </div>
+  
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">List with heading</div>
+                <p class="docs-content-paragraph">
+                    Simple List variation 1</p>
 
-    <div class="list-container">
-        <ul class="list-wrapper list-row-layout">
-            <li class='list-item'>List Item 1</li>
-            <li class='list-item'>List Item 2</li>
-            <li class='list-item'>List Item 3</li>
-        </ul>
-    </div>
-
-
-
-    <div class="list-container">
-        <ul class="list-wrapper stacked-list">
-            <li class="list-item stacked-list-item">
-                <img
-                class="avatar avatar-size-sm"
-                src="/Images/cat.jpg"
-                alt="avatar"/>
-                <div>
-                    <h4 class="list-item-text-header">Spotted a Cat</h4>
-                    <p class="list-item-text">Someone commented on your post!</p>
+                <div class="component-live-example-container">
+                    <div class="list-container">
+                        <div class="list-title-subtitle-cont">
+                            <h3 class="list-heading">List Heading</h3>
+                        </div>
+                        
+                        <ul class="list-wrapper">
+                            <li class='list-item'>List Item 1</li>
+                            <li class='list-item'>List Item 2</li>
+                            <li class='list-item'>List Item 3</li>
+                            <li class='list-item'>List Item 4</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div>
-                    <span class="list-item-text">1min ago</span>
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="list-container"&gt;
+&lt;div class="list-title-subtitle-cont"&gt;
+    &lt;h3 class="list-heading"&gt;List Heading&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;ul class="list-wrapper"&gt;
+    &lt;li class='list-item'&gt;List Item 1&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 2&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 3&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">List with heading and subheading</div>
+                <p class="docs-content-paragraph">
+                    Simple List variation 2</p>
+
+                <div class="component-live-example-container">
+                    <div class="list-container">
+                        <div class="list-title-subtitle-cont seperator-line-bottom">
+                            <h3 class="list-heading">List Heading</h3>
+                            <h5 class="list-sub-heading">List sub heading</h5>
+                        </div>
+                        
+                        <ul class="list-wrapper">
+                            <li class='list-item'>List Item 1</li>
+                            <li class='list-item'>List Item 2</li>
+                            <li class='list-item'>List Item 3</li>
+                            <li class='list-item'>List Item 4</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="list-container"&gt;
+&lt;div class="list-title-subtitle-cont seperator-line-bottom"&gt;
+    &lt;h3 class="list-heading"&gt;List Heading&lt;/h3&gt;
+    &lt;h5 class="list-sub-heading"&gt;List sub heading&lt;/h5&gt;
+&lt;/div&gt;
+&lt;ul class="list-wrapper"&gt;
+    &lt;li class='list-item'&gt;List Item 1&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 2&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 3&lt;/li&gt;
+    &lt;li class='list-item'&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">List - Row layout</div>
+                <p class="docs-content-paragraph">
+                    This kind of list variation can be used while laying out the links of a navigation bar</p>
+
+                <div class="component-live-example-container">
+                    <div class="list-container">
+                        <ul class="list-wrapper list-row-layout">
+                            <li class='list-item'>List Item 1</li>
+                            <li class='list-item'>List Item 2</li>
+                            <li class='list-item'>List Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="list-container"&gt;
+    &lt;ul class="list-wrapper list-row-layout"&gt;
+        &lt;li class='list-item'&gt;List Item 1&lt;/li&gt;
+        &lt;li class='list-item'&gt;List Item 2&lt;/li&gt;
+        &lt;li class='list-item'&gt;List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Stacked List</div>
+                <p class="docs-content-paragraph">
+                    This kind of list variation can be used for presenting notifications</p>
+
+                <div class="component-live-example-container">
+                    <div class="list-container">
+                        <ul class="list-wrapper stacked-list">
+                            <li class="list-item stacked-list-item">
+                                <img
+                                class="avatar avatar-size-sm"
+                                src="/Images/cat.jpg"
+                                alt="avatar"/>
+                                <div>
+                                    <h4 class="list-item-text-header">Spotted a Cat</h4>
+                                    <p class="list-item-text">Someone commented on your post!</p>
+                                </div>
+                    
+                                <div>
+                                    <span class="list-item-text">1min ago</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;div class="list-container"&gt;
+&lt;ul class="list-wrapper stacked-list"&gt;
+    &lt;li class="list-item stacked-list-item"&gt;
+        &lt;img
+        class="avatar avatar-size-sm"
+        src="/Images/cat.jpg"
+        alt="avatar"/&gt;
+        &lt;div&gt;
+            &lt;h4 class="list-item-text-header"&gt;Spotted a Cat&lt;/h4&gt;
+            &lt;p class="list-item-text"&gt;Someone commented on your post!&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;span class="list-item-text"&gt;1min ago&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
 
 
 
 
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
+
+
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>
+
