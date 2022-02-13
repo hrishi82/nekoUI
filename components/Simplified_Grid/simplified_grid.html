@@ -4,92 +4,328 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplified grid</title>
-    <link rel="stylesheet" href="/CSS/components.css">
+    <title>nekoUI | Lists</title>
+    <link rel="stylesheet" href="/Docs/docs.css">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Prism CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 </head>
+
 <body>
-    <!-- 50-50 Layout -->
-    <div class="grid-50-50-layout">
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div class="grid-text-content-center">
-            <div class="text-container">
-                <h2 class="grid-text-heading">Cat Toys</h2>
-                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
-                <div class="grid-btn-container">
-                    <a class="btn btn-outline-secondary">Explore</a>
+
+    <nav class="nav-wrapper">
+        <nav class="nav-items-left">
+          <span class="nav-hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="nav-logo-container">
+                <a href="/index.html" id='nav-logo-link'><img src="/Images/catLogo.png" alt="" class="nav-logo"></a>
+            </div>
+            <a href="/index.html" class="nav-title">nekoUI</a>
+        </nav>
+        <nav class="nav-items-right">
+            <a href="/Docs/docs.html" class="nav-link">Docs</a>
+            <a href="/Docs/releases.html" class="nav-link">Releases</a>
+        </nav>
+      </nav>
+  
+      <main class="docs-main-container relative">
+  
+          <aside class="sidebar">
+              <header class="sidebar-heading">Get Started</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Introduction</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/Docs/docs.html">Colors</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Typography/typography.html">Text Utilities</a></li>
+              </ul>    
+              
+              <header id="components" class="sidebar-heading">Components</header>
+              <hr />
+  
+              <ul class="sidebar-list-container">
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Alert/alert.html">Alert</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Badges/badges.html">Badge</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Buttons/buttons.html">Button</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Cards/cards.html">Card</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Images/image.html">Image</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Input/input.html">Input </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Lists/lists.html">List </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Navigation/nav.html">Navigation</a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Modal/modal.html">Modal </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Rating/rating.html">Rating </a></li>
+                <li class="sidebar-li-item"><a class="sidebar-links" href="/components/Snackbar/snackbar.html">Toast</a></li>
+                <li class="sidebar-li-item sidebar-li-item-active"><a class="sidebar-links" href="/components/Simplified_Grid/simplified_grid.html">Grid</a></li>
+              </ul>
+            </aside>
+
+          <section class="docs-all-content-container">
+  
+            <div class="docs-content-block docs-content-first-block">
+              <h3 class="docs-content-heading">Grid</h3>
+              <p class="docs-content-paragraph">
+                nekoUI offers four options of grid layout to the user. The options are displayed below.</p>
+            </div>
+  
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Grid - 50-50 </div>
+                <p class="docs-content-paragraph">
+                    This grid consists of two columns split in even. Use the class <span class="docs-content-class-name">grid-50-50-layout</span> to use it</p>
+
+                <div class="component-live-example-container">
+                    <!-- 50-50 Layout -->
+                    <div class="grid-50-50-layout">
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div class="grid-text-content-center">
+                            <div class="text-container">
+                                <h2 class="grid-text-heading">Cat Toys</h2>
+                                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
+                                <div class="grid-btn-container">
+                                    <a class="btn btn-outline-secondary">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- 50-50 Layout --&gt;
+&lt;div class="grid-50-50-layout"&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-text-content-center"&gt;
+        &lt;div class="text-container"&gt;
+            &lt;h2 class="grid-text-heading"&gt;Cat Toys&lt;/h2&gt;
+            &lt;h4 class="grid-text-sub-heading"&gt;Starting At Rs.1299&lt;/h4&gt;
+            &lt;div class="grid-btn-container"&gt;
+                &lt;a class="btn btn-outline-secondary"&gt;Explore&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- 30-70 Layout -->
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Grid - 70-30 </div>
+                <p class="docs-content-paragraph">
+                    This grid consists of two columns split in division where the left side takes 70% of the width and the right side takes 30%. Use the class <span class="docs-content-class-name">grid-70-30-layout</span> to use it</p>
 
-    <div class="grid-70-30-layout">
-        
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div class="grid-text-content-center">
-            <div class="text-container">
-                <h2 class="grid-text-heading">Cat Toys</h2>
-                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
-                <div class="grid-btn-container">
-                    <a class="btn btn-outline-secondary">Explore</a>
+                <div class="component-live-example-container">
+                    <!-- 70-30 Layout -->
+                    <div class="grid-70-30-layout">
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div class="grid-text-content-center">
+                            <div class="text-container">
+                                <h2 class="grid-text-heading">Cat Toys</h2>
+                                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
+                                <div class="grid-btn-container">
+                                    <a class="btn btn-outline-secondary">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- 70-30 Layout --&gt;
+&lt;div class="grid-70-30-layout"&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-text-content-center"&gt;
+        &lt;div class="text-container"&gt;
+            &lt;h2 class="grid-text-heading"&gt;Cat Toys&lt;/h2&gt;
+            &lt;h4 class="grid-text-sub-heading"&gt;Starting At Rs.1299&lt;/h4&gt;
+            &lt;div class="grid-btn-container"&gt;
+                &lt;a class="btn btn-outline-secondary"&gt;Explore&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- 30-70 Layout -->
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Grid - 30-70 </div>
+                <p class="docs-content-paragraph">
+                    This grid consists of two columns split in division where the left side takes 30% of the width and the right side takes 70%. Use the class <span class="docs-content-class-name">grid-30-70-layout</span> to use it</p>
 
-    <div class="grid-30-70-layout">
-        
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div class="grid-text-content-center">
-            <div class="text-container">
-                <h2 class="grid-text-heading">Cat Toys</h2>
-                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
-                <div class="grid-btn-container">
-                    <a class="btn btn-outline-secondary">Explore</a>
+                <div class="component-live-example-container">
+                    <!-- 30-70 Layout -->
+                    <div class="grid-30-70-layout">
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div class="grid-text-content-center">
+                            <div class="text-container">
+                                <h2 class="grid-text-heading">Cat Toys</h2>
+                                <h4 class="grid-text-sub-heading">Starting At Rs.1299</h4>
+                                <div class="grid-btn-container">
+                                    <a class="btn btn-outline-secondary">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- 30-70 Layout --&gt;
+&lt;div class="grid-30-70-layout"&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-text-content-center"&gt;
+        &lt;div class="text-container"&gt;
+            &lt;h2 class="grid-text-heading"&gt;Cat Toys&lt;/h2&gt;
+            &lt;h4 class="grid-text-sub-heading"&gt;Starting At Rs.1299&lt;/h4&gt;
+            &lt;div class="grid-btn-container"&gt;
+                &lt;a class="btn btn-outline-secondary"&gt;Explore&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <hr class="divider">
+            <div class="docs-content-block">
+                <div class="docs-content-heading">Grid - 3 column </div>
+                <p class="docs-content-paragraph">
+                    This is a 3 column grid. Use the class <span class="docs-content-class-name">grid-3-col-layout</span> to use it</p>
+
+                <div class="component-live-example-container">
+                    <!-- 3 Col Layout -->
+                    <div class="grid-3-col-layout">
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                        <div>
+                            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet-container">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;!-- 3 Col Layout --&gt;
+
+&lt;div class="grid-3-col-layout"&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;img class="img-responsive" src="/Images/cat.jpg" alt="banner-image"&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
 
 
-    <!-- 50-50 Layout -->
-
-    <div class="grid-3-col-layout">
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-        <div>
-            <img class="img-responsive" src="/Images/cat.jpg" alt="banner-image">
-        </div>
-
-    </div>
+          </section>
+      </main>
+  
+  
+  
+  
+  
+      <script src="/script.js"></script>
+  
+      <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+              integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+  
 
 
-    
+    <script src="./alert.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
 </body>
+
+
 </html>
+

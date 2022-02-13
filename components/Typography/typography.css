@@ -2,36 +2,33 @@
 
 .text-xl{
     font-size: 3rem;
-    margin: 0.5rem;
 }
 .text-l{
     font-size: 2rem;
-    margin: 0.5rem;
 }
 .text-md{
     font-size: 1.5rem;
-    margin: 0.5rem;
 }
 .text-reg{
     font-size: 1rem;
-    margin: 0.5rem;
 }
 .text-sm{
     font-size: 0.8rem;
-    margin: 0.5rem;
 }
 .text-xs{
     font-size: 0.5rem;
-    margin: 0.5rem;
 }
 
 
-.text-no-margin{
-    margin: 0;
-}
 
 .text-center{
     text-align: center;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align:right;
 }
 
 .text-grey{

@@ -1,0 +1,11 @@
+.releases-main-cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.releases-logo-img{
+    height: 20rem;
+}

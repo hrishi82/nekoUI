@@ -1,0 +1,88 @@
+:root{
+    --navbar-bg-color: black;
+    --navbar-text-color: white;
+}
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+}
+.nav-items-left{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-hamburger-icon{
+    display: none;
+    padding: 0.2rem 0.5rem;
+    margin-right: 1.2rem;
+}
+.nav-hamburger-icon:hover{
+    outline: 1px solid var(--navbar-text-color);
+    border-radius: 0.2rem;
+}
+
+.nav-logo-container{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+.nav-logo{
+    width: 100%;
+}
+
+#nav-logo-link{
+    cursor: pointer;
+}
+
+.nav-title{
+    margin: 0 0 0 0.1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-text-color)
+}
+
+.nav-items-right{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--navbar-text-color);
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+}
+
+.nav-link:hover{
+    outline: 1px solid var(--navbar-text-color);
+}
+
+
+@media screen and (max-width:800px) {
+    .nav-hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .show {
+        display: block;
+    }
+}

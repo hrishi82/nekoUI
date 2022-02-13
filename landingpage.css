@@ -1,0 +1,78 @@
+@import url('./CSS/components.css');
+@import url('./CSS/navbar.css');
+@import url('./CSS/bodyUtilities.css');
+@import url('./CSS/sidebar.css');
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 0 5rem;
+}
+
+.hero-img{
+    width: 15rem;
+    height: 19rem;
+}
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-description{
+    margin-top: 1rem;    
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;    
+}
+
+.hero-btn-wrapper{
+    margin-top: 2rem;
+}
+
+.hero-link{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    color:white;
+    background-color: black;
+    outline: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+.hero-link-primary{
+    color:white;
+    background-color: #7901a8;
+    
+}
+.hero-link-primary:hover{
+    color:white;
+    background-color: #5f0085;
+}
+
+.hero-link-secondary{
+    background-color: white;
+    color: var(--secondary-clr);
+    outline: 1px solid var(--secondary-clr);
+}
+
+.hero-link-secondary:hover{
+    background-color: var(--secondary-clr);
+    color: white;
+    border: none;
+}
+
+
+.hero-btn-wrapper{
+    margin: 3rem;
+}
+
+

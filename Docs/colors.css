@@ -1,0 +1,35 @@
+
+.palette-block{
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.palette-block-primary{
+    background-color: var(--primary-clr);
+    color: var(--default-font-clr);
+}
+.palette-block-secondary{
+    background-color: var(--secondary-clr);
+    color: var(--default-font-clr);
+}
+.palette-block-success{
+    background-color: var(--success-clr);
+    color: var(--default-font-clr);
+}
+.palette-block-warning{
+    background-color: var(--warning-clr);
+    color: var(--default-font-clr);
+}
+.palette-block-danger{
+    background-color: var(--danger-clr);
+    color: var(--default-font-clr);
+}
+.palette-block-disabled{
+    background-color: var(--disabled-clr);
+    color: var(--default-font-clr);
+}
