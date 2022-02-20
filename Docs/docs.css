@@ -16,7 +16,7 @@
     min-width: 0;
     max-width: 40rem;
     flex: 1 1 0%;
-    margin: auto;
+    margin: 0 auto;
     text-align: justify;
 }
 

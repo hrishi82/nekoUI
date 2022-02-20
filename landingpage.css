@@ -3,6 +3,9 @@
 @import url('./CSS/bodyUtilities.css');
 @import url('./CSS/sidebar.css');
 
+.landing-pg-cont{
+    overflow-y: hidden;
+}
 
 .hero{
     display: flex;
