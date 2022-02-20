@@ -7,7 +7,9 @@
  
  Copy-paste the stylesheet <link> into your <head> element before all other stylesheets to load our CSS.
  
-<link rel="stylesheet" href="https://nekoui.netlify.app/CSS/components.css">
+`<link rel="stylesheet" href="https://nekoui.netlify.app/CSS/components.css">`
+ 
+
  
   <br>
  
