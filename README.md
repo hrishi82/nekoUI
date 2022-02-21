@@ -13,6 +13,16 @@
  
   <br>
  
+## Tech Stack
+ 
+ - HTML
+ - CSS
+ - Javascript
+ 
+
+ 
+  <br>
+ 
  ## Components offered by nekoUI
  
 - Avatar
@@ -31,6 +41,14 @@
 - Simplified Grid
 
  <br>
+ 
+ 
+## UI Demo
+ 
+https://user-images.githubusercontent.com/53048695/154934805-d5643d93-af87-4d22-94e0-1cab91a8e5a2.mp4
+
+ 
+<br>
  
 ## UI Snapshots
  
